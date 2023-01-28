@@ -1,8 +1,33 @@
 let phrases = "Vem mostrar essa é sua força"
+let distritos = ["palacio", "Plator norte", "plator leste", "Fiorde"]
+let myArray1 = new Array('a','b','c')
+let myArray2 = new Array(10)
+/*
+console.log(myArray1);
+console.log(myArray2);
+console.log(["a",{type: "array"},function(){return "alo"}]);
+console.log(Array.from(phrases))
+*/
+distritos.push("nodejs")
+distritos.unshift("java")
+//distritos.pop()
+//distritos.shift();  
+//console.log(distritos.slice(1,3))
+//console.log(distritos.splice(1,2))
+let index = distritos.indexOf('nodejs')
+console.log(index)
+
+
+
+/*
+
 let myArray = phrases.split(" ")
 console.log(myArray);
 let phrasesWithundercore = myArray.join("_")
 console.log(phrasesWithundercore.toLowerCase());
+
+console.log(phrases.includes("força"))
+
 
 /*
 let word = "Bem Vindo ao Reino de Arendelle"
