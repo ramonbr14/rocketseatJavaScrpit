@@ -1,4 +1,81 @@
-//Converter Cesius em Fahrenheit
+//Buscando dados em Arrays
+
+const booksByCategory = [
+    {
+        category:"Riqueza",
+        books:[
+        {
+            title: "Os segredos da mente milionaria",
+            autor: "T. Harv Eker",
+        },
+        {
+            title: "Os homens mais ricos da Babilônia",
+            autor: " George S. Classon",
+        },
+        {
+            title: "Pai Rico, Pai Pobre",
+            autor:"Robert e Sharon",
+        },
+    ],
+    },
+    {
+    category:"Inteligencia Emocional",
+    books: [
+        {
+            title: "Você é insubstituível",
+            autor: "Agusto Cury",
+        },
+        {
+            title: "Ansiedade - Como enfrentar o mal do século",
+            autor: "Agusto Cury",
+        },
+        {
+            title: "Os 7 habitos das pessoas altamente efica-ses",
+            autor:"Stephen R. Covey",
+        },
+    ],
+    }
+    ];
+
+    const totalCategories = booksByCategory.length
+
+    console.log(totalCategories);
+    for(let category of booksByCategory){
+        console.log('Total de livros da categoria: ', category.category)
+        console.log(category.books.length)
+    }
+
+    function countAuthors() {
+        let authors = [];
+        for(let category of booksByCategory){
+            for(let book of category.books){
+                if(authors.indexOf(book.autor) == -1){
+                    authors.push(book.title)
+                }
+            }
+        }
+
+        console.log("Total de Autores: ",authors.length)
+    }
+
+    function countAugustoCury() {
+        let books = [];
+        for(let category of booksByCategory){
+            for(let book of category.books){
+                if(book.autor === 'Robert e Sharon'){
+                    books.push(book.title)
+                }
+            }
+        }
+
+        console.log("Total de Augusto Cury: ",books)
+    }
+
+    countAuthors();
+    countAugustoCury();
+
+
+/*Converter Cesius em Fahrenheit
 //realizado com ajuda do @theProgAmador
 let covCel = '35.5 ºC';
 let conFar = '35.5 F';
@@ -10,10 +87,10 @@ function ConverteTemperatura(texto) {
     t = texto.split(' ')[0]
     
     if(celsius){
-        return (t*9/5 +32).toFixed(3)
+        return ((t*9/5 +32).toFixed(3)+ ' ºF')
 
     } else if(farenht){
-        return ((t - 32)*5/9).toFixed(3)
+        return (((t - 32)*5/9).toFixed(3)+ ' ºC')
     } else{
         console.log("Entrada invalida");
     }
