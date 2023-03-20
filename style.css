@@ -1,58 +1,11 @@
-h1{
-    color: blue;
-    font-size: 60px;
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px 
 }
-
-p{
-    color: green;
-}
-
-
-#Titulo{
-    color: orange;
-}
-
-#conteudow{
-    color: red;
-}
-
-.redmay{
-    color: darkred;
-}
-
-button + button{
-    margin-left: 50px;
-}
-
-article p:nth-child(3){
-    font-weight: bold;
-    font-size: 60px;
-}
-article p:nth-of-type(1){
-    font-weight: bold;
-    font-size: 60px;
-}
-ul li:first-child{
-    font-weight: bold;
-    color: brown;
-}
-
-ul li:nth-child(odd){
-    color: yellowgreen;
-    background: #eee;
-}
-
-a:hover{
-    color: red;
-    
-}
-input:focus{
-    border-color: blueviolet;
-    outline: none;
-}
-input:disabled{
-    background-color: red;
-}
-input:required{
-    background-color: blue;
+.item{
+    background-color: aqua;
+    border: 1px solid;
 }

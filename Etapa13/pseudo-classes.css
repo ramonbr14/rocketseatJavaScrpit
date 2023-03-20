@@ -1,0 +1,58 @@
+h1{
+    color: blue;
+    font-size: 60px;
+}
+
+p{
+    color: green;
+}
+
+
+#Titulo{
+    color: orange;
+}
+
+#conteudow{
+    color: red;
+}
+
+.redmay{
+    color: darkred;
+}
+
+button + button{
+    margin-left: 50px;
+}
+
+article p:nth-child(3){
+    font-weight: bold;
+    font-size: 60px;
+}
+article p:nth-of-type(1){
+    font-weight: bold;
+    font-size: 60px;
+}
+ul li:first-child{
+    font-weight: bold;
+    color: brown;
+}
+
+ul li:nth-child(odd){
+    color: yellowgreen;
+    background: #eee;
+}
+
+a:hover{
+    color: red;
+    
+}
+input:focus{
+    border-color: blueviolet;
+    outline: none;
+}
+input:disabled{
+    background-color: red;
+}
+input:required{
+    background-color: blue;
+}
