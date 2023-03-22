@@ -1,3 +1,25 @@
+.box{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: column wrap;
+    /*flex-flow: column-reverse wrap;*/
+    border: 3px dashed red;
+}
+
+.box div{
+    border: 1px  solid;
+}
+
+
+.container2{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80vh;
+}
+
 .container{
     border: 1px solid red;
     display: flex;
