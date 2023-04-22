@@ -1,43 +1,29 @@
-.box{
+header{
+    border: 1px solid black;
     display: flex;
-    border: 1px dashed red;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color:grey;
 }
+.logo{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+    
+box{
+    padding: 20px;
+    align-items: center ;
+    display: flex;
+    gap:.8rem;
+    justify-content: flex-end;
+}
+button:last-child{
+    height: 3rem;
+    width: 8rem;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: aliceblue;
+    font-family:'Lucida Sans';
 
-.box div{
-    border: 1px solid;
-}
-
-.box div:nth-child(1){
-    order: 1;
-}
-.box div:nth-child(2){
-    order: -1;
-}
-.box div:nth-child(3){
-    order: 0;
-}
-.box div:nth-child(4){
-    order: 50;
-}
-
-
-.page {
-    border: 2px solid;
-    min-height: 100vh;
-}
-
-aside{
-background-color: lightgreen;
-}
-
-main{
-    background-color: lightblue;
-}
-
-main section:nth-child(1){  
-    background: lightcoral;
-}main section:nth-child(2){  
-    background: lightsalmon
-}main section:nth-child(3){  
-    background: lightslategray;
 }
