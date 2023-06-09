@@ -1,9 +1,96 @@
+*{margin: 0;}
 header{
     border: 1px solid black;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     background-color:grey;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+}
+
+footer{
+    margin-top: auto;
+
+    background: gray;
+    color: white;
+
+    height: 8rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center     ;
+
+}
+
+
+button{
+display: flex;
+align-items: center;
+
+line-height: 0;
+
+gap: .4rem;
+}
+
+button img{
+    width: 2rem;
+    height: 2rem;
+}
+.img{
+    width: 30%;
+    height: auto;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+}
+
+aside, main{
+    border: 10px solid;
+    height: 95vh;
+}
+
+aside {
+    flex-basis: 25%;
+}
+
+main{
+    flex: 1;
+}
+
+*{
+    margin: 0;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    align-items: center;
+}
+
+ul li:last-child{
+    background-color: black;
+    color: white;
+    padding: .8rem;
 }
 .logo{
     display: flex;
